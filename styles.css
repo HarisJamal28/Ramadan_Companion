@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background-color: rgb(221, 255, 221);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1px;
+  padding: 1rem;
+  width: 300px;
+  text-wrap: nowrap;
+  text-align: center;
+  background-color: green;
+}
+
+button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#start {
+  width: 100%;
+  height: 50px;
+  background-size: contain;
+  background-image: url(./images/bismillah.png);
+  background-size: 100px;
+  background-position: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+#CounterStack {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+#CounterStack div {
+  height: 500px;
+  width: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(123, 24, 24);
+  border-radius: 10px;
+}
+#CounterStack button {
+  width: 45px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid black;
+  font-weight: bolder;
+}
+
+#CounterStack2 {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+#CounterStack2 div {
+  padding: 10px;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+}
+#CounterStack2 div:nth-child(even) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#CounterStack2 div:nth-child(odd) {
+  border: 1px solid black;
+  width: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgb(123, 24, 24);
+}
+#CounterStack2 div:nth-child(odd) button {
+  background-color: white;
+  margin: 5px;
+  font-weight: bolder;
+}
+#CounterStack2 div:nth-child(3) {
+  border: 1px solid black;
+  width: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0px;
+  background-color: rgb(123, 24, 24);
+}
+#CounterStack2 div:nth-child(3) button {
+  background-color: white;
+  margin: 5px;
+  font-weight: bolder;
+}
+#CounterStack2 div button {
+  border: 3px solid black;
+  background-color: green;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#CounterStack3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 10px;
+}
+#CounterStack3 div {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+}
+#CounterStack3 div button {
+  border: 5px solid black;
+  border-radius: 10px;
+}
+#CounterStack3 div #first {
+  width: 2px;
+  border-radius: 20px;
+  background-color: rgb(123, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#CounterStack3 div #first button {
+  width: 40px;
+  height: 45px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#CounterStack3 div #second {
+  width: 2px;
+  border-radius: 20px;
+  background-color: rgb(123, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#CounterStack3 div #second button {
+  width: 40px;
+  height: 45px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#CounterStack3 div #third {
+  width: 2px;
+  border-radius: 20px;
+  background-color: rgb(123, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#CounterStack3 div #third button {
+  width: 40px;
+  height: 45px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#CounterStack3 div #fourth {
+  width: 2px;
+  border-radius: 20px;
+  background-color: rgb(123, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#CounterStack3 div #fourth button {
+  width: 40px;
+  height: 45px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#CounterStack3 div:nth-child(even) {
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+#CounterStack3 div:nth-child(even) div {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#CounterStack3 div #count button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: green;
+  border: 3px solid black;
+  height: 45px;
+  width: 45px;
+}
+
+#Tracker {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+#Tracker div {
+  min-width: 10px;
+}
+
+#TasbeehFatima {
+  background-image: url(./images/SubhanAllah.png);
+  width: 100%;
+  height: 50px;
+  background-size: contain;
+  background-size: 80px;
+  background-position: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+#count {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#count button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: green;
+  border: 3px solid black;
+  height: 45px;
+  width: 45px;
+}
+#count button:nth-child(odd) {
+  background-color: white;
+  border-radius: 40px;
+}
+#count button:nth-child(even) {
+  background-color: green;
+  border-radius: 40px;
+}
+
+#TaraweehStart {
+  background-image: url(./images/Laillah.png);
+  width: 100%;
+  height: 50px;
+  background-size: contain;
+  background-size: 80px;
+  background-position: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+#TaraweehStart div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#TaraweehStart button {
+  padding: 10px;
+  border-radius: 40px;
+  background-color: green;
+  border: 3px solid black;
+  height: 45px;
+  width: 45px;
+}
+#TaraweehStart button:nth-child(odd) {
+  background-color: white;
+  border-radius: 40px;
+}
+#TaraweehStart button:nth-child(even) {
+  background-color: green;
+  border-radius: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav button {
+  padding: 10px;
+  border-radius: 40px;
+  background-color: green;
+  border: 3px solid black;
+  height: 45px;
+  width: 45px;
+}
+
+#Page2 {
+  display: none;
+}
+
+#Page3 {
+  display: none;
+}
+
+.BODY {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.BODY .Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 400px;
+  height: 100%;
+  background-color: rgba(37, 172, 37, 0.787);
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 1rem green;
+}
+.BODY .Main nav {
+  width: 300px;
+}
+.BODY .Main #Page1 {
+  min-width: 300px;
+}
+.BODY .Main #Page2 {
+  min-width: 300px;
+}
+.BODY .Main #Page3 {
+  min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .BODY {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .BODY .Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(37, 172, 37, 0.787);
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem green;
+    overflow-x: hidden;
+  }
+  .BODY .Main h1 {
+    font-size: 1.8rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .BODY .Main nav {
+    width: 300px;
+  }
+  .BODY .Main #Page1 {
+    min-width: 250px;
+  }
+  .BODY .Main #Page2 {
+    min-width: 250px;
+    width: 100%;
+  }
+  .BODY .Main #Page3 {
+    min-width: 250px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

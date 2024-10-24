@@ -1,0 +1,503 @@
+body{
+    background-color: rgb(221, 255, 221);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    // border: 1px solid black;
+    color: white;
+    letter-spacing: 1px;
+    padding: 1rem;
+    width: 300px;
+    text-wrap: nowrap;
+    text-align: center;
+    background-color: green;
+}
+
+button{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#start{
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    // padding: 10px;
+    background-image: url(./images/bismillah.png);
+    background-size: 100px;
+    background-position: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+
+#CounterStack{
+
+        // border: 1px solid red;
+        // padding: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+
+    div{
+        // border: 1px solid black;
+        height: 500px;
+        width: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        flex-direction: column;
+        background-color: rgb(123, 24, 24);
+        border-radius: 10px;
+    }
+
+    button{
+        // padding: 10px;
+        width: 45px;
+        height: 40px;
+        border-radius: 10px;
+        border: 3px solid black;
+        font-weight: bolder;
+    }
+}
+
+#CounterStack2{
+    // border: 1px solid red;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    div{
+        // border: 1px solid black;
+        padding: 10px;
+        width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+
+        // display: flex;
+        // justify-content: space-evenly;
+        // align-items: center;
+
+        &:nth-child(even){
+            // border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+        }
+        &:nth-child(odd){
+            border: 1px solid black;
+            width: 3px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: rgb(123, 24, 24);
+            button{
+                background-color: white;
+                margin: 5px;
+                font-weight: bolder;
+            }
+        }
+        &:nth-child(3){
+            border: 1px solid black;
+            width: 3px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 0px;
+            background-color: rgb(123, 24, 24);
+            button{
+                background-color: white;
+                margin: 5px;
+                font-weight: bolder;
+            }
+        }
+
+        button{
+            border: 3px solid black;
+            background-color: green;
+            border-radius: 10px;
+            padding: 15px;
+        }
+    }
+}
+
+
+#CounterStack3{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 10px;
+    // font-weight: bolder;
+    
+    div{
+        // border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-align: center;
+        width: 100%;
+
+        button{
+            border: 5px solid black;
+            border-radius: 10px;
+            // padding: 10px;
+            // content: '';
+        }
+
+        #first{
+            // border: 2px dotted red;
+
+
+            width: 2px;
+            border-radius: 20px;
+            background-color: rgb(123, 24, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            button{
+                width: 40px;
+                height: 45px;
+                margin-bottom: 10px;
+                font-weight: bolder;
+
+                // margin: 10px;
+            }
+        }
+
+        #second{
+
+            // border: 2px dotted blue;
+
+            width: 2px;
+            border-radius: 20px;
+            background-color: rgb(123, 24, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            button{
+                width: 40px;
+                height: 45px;
+                margin-bottom: 10px;
+                font-weight: bolder;
+
+                // margin: 10px;
+            }
+        }
+
+
+        #third{
+
+            // border: 2px dotted green;
+
+            width: 2px;
+            border-radius: 20px;
+            background-color: rgb(123, 24, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            button{
+                width: 40px;
+                height: 45px;
+                margin-bottom: 10px;
+                font-weight: bolder;
+
+                // margin: 10px;
+            }
+        }
+
+        #fourth{
+
+            // border: 2px dotted yellow;
+
+            width: 2px;
+            border-radius: 20px;
+            background-color: rgb(123, 24, 24);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            button{
+                width: 40px;
+                height: 45px;
+                margin-bottom: 10px;
+                font-weight: bolder;
+
+                // margin: 10px;
+            }
+        }
+
+
+        &:nth-child(even){
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            width: 25%;
+            div{
+                width: fit-content;
+            }
+        }
+
+        #count{
+            // border: 1px solid blue;
+            button{
+                padding: 10px;
+                border-radius: 5px;
+                background-color: green;
+                border: 3px solid black;
+                height: 45px;
+                width: 45px;
+            }
+        }
+    }
+
+
+
+}
+
+#Tracker{
+    // overflow-x: scroll;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    div{
+        min-width: 10px;
+    }
+}
+
+
+#TasbeehFatima{
+    background-image: url(./images/SubhanAllah.png);
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    // padding: 10px;
+    // background-image: url(/images/bismillah.png);
+    background-size: 80px;
+    background-position: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+#count{
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    button{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: green;
+        border: 3px solid black;
+        height: 45px;
+        width: 45px;
+
+        &:nth-child(odd){
+            background-color: white;
+            border-radius: 40px;
+        }
+
+        &:nth-child(even){
+            background-color: green;
+            border-radius: 40px;
+        }
+    }
+}
+
+#TaraweehStart{
+    background-image: url(./images/Laillah.png);
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    // padding: 10px;
+    // background-image: url(/images/bismillah.png);
+    background-size: 80px;
+    background-position: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    div{
+    //     border: 1px solid blue;
+        display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    // flex-direction: row;
+    }
+
+    button{
+        padding: 10px;
+        border-radius: 40px;
+        background-color: green;
+        border: 3px solid black;
+        height: 45px;
+        width: 45px;
+
+        &:nth-child(odd){
+            background-color: white;
+            border-radius: 40px;
+        }
+
+        &:nth-child(even){
+            background-color: green;
+            border-radius: 40px;
+        }
+    }
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    button{
+        padding: 10px;
+        border-radius: 40px;
+        background-color: green;
+        border: 3px solid black;
+        height: 45px;
+        width: 45px;
+
+        // &:nth-child(3){
+        //     // object-fit: contain;
+        //     background-image: url(./images/Tasbeeh.png);
+        //     // width: 100%;
+        //     height: 100%;
+        //     background-size: cover;
+        //     // padding: 10px;
+        //     // background-image: url(/images/bismillah.png);
+        //     // background-size: 80px;
+        //     background-position: center;
+        //     background-position-x: center;
+        //     background-repeat: no-repeat;
+        // }
+    }
+}
+
+
+#Page1{
+    // border: 1px solid black;
+}
+
+#Page2{
+    display: none;
+    // border: 1px solid black;
+
+}
+
+#Page3{
+    display: none;
+    // border: 1px solid black;
+
+}
+
+.BODY{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 400px;
+    height: 100%;
+    background-color: rgba(37, 172, 37, 0.787);
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem  green;
+    nav{
+        width: 300px;
+    }
+
+    #Page1{
+        min-width: 300px;
+    }
+    
+    #Page2{
+        min-width: 300px;
+    }
+    
+    #Page3{
+        min-width: 300px;
+    }
+}
+}
+
+
+@media screen and (max-width:600px) {
+    .BODY{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    .Main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(37, 172, 37, 0.787);
+        padding-bottom: 3rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 1rem  green;
+        overflow-x: hidden;
+
+        h1{
+            font-size: 1.8rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        nav{
+            width: 300px;
+        }
+    
+        #Page1{
+            min-width: 250px;
+        }
+        
+        #Page2{
+            min-width: 250px;
+            width: 100%;
+        }
+        
+        #Page3{
+            min-width: 250px;
+            width: 100%;
+
+        }
+    }
+    }
+}

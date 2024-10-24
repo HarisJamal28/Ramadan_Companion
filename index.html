@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ramadan Companion</title>
+    <!-- <title>Test 16</title> -->
+</head>
+<body>
+    <main class="BODY">
+    <main class="Main">
+    <audio id="audio" src="./sound.mp3"></audio>
+    <h1>Your Ramadan Companion</h1>
+    <!-- <br> -->
+
+    <nav>
+        <button id="nav-butt1" onclick="Disp1()"><i id="icon1" class="fa-solid fa-book-quran"></i></button>
+        <button id="nav-butt2" onclick="Disp2()"><i id="icon2" class="fa-solid fa-hands-praying"></i></button>
+        <button id="nav-butt3" onclick="Disp3()"><i id="icon3" class="fa-solid fa-person-praying fa-1x"></i></button>
+    </nav>
+
+    <!-- <br> -->
+
+    <!-- <h1>Ramadan Kareem</h1> -->
+    <section id="Page1">
+    <h1>Siparah Tracker</h1>
+    <section id="start"></section>
+    <br>
+    <section id="CounterStack">
+        <div><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button></div>
+        <div><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button></div>
+        <div><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button></div>
+    </section>
+    </section>
+
+    <section id="Page2">
+    <h1>Taraweeh Counter</h1>
+    <div id="TaraweehStart">
+        <div>
+            <button onclick="resetTara()"><i class="fa-solid fa-rotate"></i></button>
+            <button onclick="Track()" id="TCount"></button>
+        </div>
+    </div>
+    <section id="CounterStack2">
+        <div id="Rakats">
+            <!-- <button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button><button></button> -->
+        
+        </div>
+        <!-- <div><button onclick="Track()"></button></div> -->
+    </section>
+    </section>
+
+
+    <section id="Page3">
+    <h1>Tasbeeh Counter</h1>
+    <div id="TasbeehFatima">
+        <div id="count">
+            <button onclick="reset()"><i class="fa-solid fa-rotate"></i></button>
+            <button onclick="tasbeeh()"></button>
+        </div>
+    </div>
+    <br>
+    <section id="CounterStack3">
+        <div id="TasbeehSTack">
+            <div id="first"></div>
+        </div>
+        <!-- <div>
+            <div id="count">
+                <button onclick="tasbeeh()"></button>
+            </div>
+        </div> -->
+    </section>
+    </section>
+    </main>
+    </main>
+    <br><br><br>
+    <script src="logic.js"></script>
+</body>
+</html>
